@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Led View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="LedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.99999999999999989" contentMode="redraw" image="PCB.png" translatesAutoresizingMaskIntoConstraints="NO" id="0zg-dL-Gpa">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" id="KyG-Ap-XA3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pd2-Y5-ZTd">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="h2j-FV-Mnt"/>
+                                    <constraint firstAttribute="height" constant="43" id="qs5-5q-pd2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="ON">
+                                    <color key="titleColor" red="0.1043696964" green="0.81503109060000001" blue="0.075538810550000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="led_on:" destination="2" eventType="touchUpInside" id="kKp-Df-RLc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHm-RZ-ztZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="ULX-r6-J5f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="OFF">
+                                    <color key="titleColor" red="0.76994977679999999" green="0.095225503259999997" blue="0.10390722619999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="led_off:" destination="2" eventType="touchUpInside" id="T6u-d5-agJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="left" text="Target URL Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37s-9M-NfG">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="nBl-QJ-GgI"/>
+                                    <constraint firstAttribute="height" constant="21" id="vB3-5I-EEW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://10.10.10.61/test.php" borderStyle="bezel" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JQk-sJ-O0p">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="21J-z6-Pak"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textfieldReturn:" destination="2" eventType="editingDidEndOnExit" id="CXr-Vp-Mt7"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="left" text="Raspberry Pi GPIO UI Prototype" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fb-rs-D0C">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="hUZ-VQ-KEz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pin 11 is currently: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cj-oZ-FZm">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1fb-rs-D0C" firstAttribute="centerX" secondItem="Pd2-Y5-ZTd" secondAttribute="centerX" type="default" id="3f8-Dp-uhB"/>
+                            <constraint firstAttribute="bottom" secondItem="2cj-oZ-FZm" secondAttribute="bottom" constant="122" id="7LO-Tw-ICn"/>
+                            <constraint firstItem="1fb-rs-D0C" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="EKB-Du-Z2j"/>
+                            <constraint firstItem="0zg-dL-Gpa" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="JdF-t0-s7O"/>
+                            <constraint firstItem="0zg-dL-Gpa" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="QP0-yo-FFs"/>
+                            <constraint firstItem="2cj-oZ-FZm" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SaA-h5-JkY"/>
+                            <constraint firstItem="37s-9M-NfG" firstAttribute="leading" secondItem="JQk-sJ-O0p" secondAttribute="leading" type="default" id="WhX-9X-paW"/>
+                            <constraint firstItem="1fb-rs-D0C" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Whh-Yj-H3G"/>
+                            <constraint firstAttribute="trailing" secondItem="2cj-oZ-FZm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="aLc-xM-Myk"/>
+                            <constraint firstItem="tHm-RZ-ztZ" firstAttribute="trailing" secondItem="Pd2-Y5-ZTd" secondAttribute="trailing" type="default" id="izg-2D-HoU"/>
+                            <constraint firstItem="37s-9M-NfG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="190" id="jFf-7Y-xPF"/>
+                            <constraint firstItem="Pd2-Y5-ZTd" firstAttribute="top" secondItem="3" secondAttribute="top" constant="65" id="k65-97-wCn"/>
+                            <constraint firstItem="JQk-sJ-O0p" firstAttribute="top" secondItem="37s-9M-NfG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="k68-94-5cd"/>
+                            <constraint firstItem="tHm-RZ-ztZ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="127" id="ke3-Fz-joJ"/>
+                            <constraint firstItem="tHm-RZ-ztZ" firstAttribute="centerX" secondItem="37s-9M-NfG" secondAttribute="centerX" type="default" id="ooB-gr-GdA"/>
+                            <constraint firstItem="0zg-dL-Gpa" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="osk-YS-kMn"/>
+                            <constraint firstItem="1fb-rs-D0C" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="pOP-za-Gih"/>
+                            <constraint firstItem="JQk-sJ-O0p" firstAttribute="trailing" secondItem="37s-9M-NfG" secondAttribute="trailing" type="default" id="vgg-yr-Dc2"/>
+                            <constraint firstItem="Pd2-Y5-ZTd" firstAttribute="leading" secondItem="tHm-RZ-ztZ" secondAttribute="leading" type="default" id="xH3-mk-n5F"/>
+                        </constraints>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="2" eventType="touchDown" id="3x8-3u-v1N"/>
+                        </connections>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="led_off" destination="tHm-RZ-ztZ" id="QMX-3m-Uod"/>
+                        <outlet property="led_on" destination="Pd2-Y5-ZTd" id="bI3-mr-x5K"/>
+                        <outlet property="pin11_state" destination="2cj-oZ-FZm" id="Egp-eA-PV3"/>
+                        <outlet property="txtUrl" destination="JQk-sJ-O0p" id="UQE-pb-osT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="-117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PCB.png" width="640" height="960"/>
+    </resources>
+    <classes>
+        <class className="LedViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LedViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backgroundTouched:"/>
+                <relationship kind="action" name="led_off:"/>
+                <relationship kind="action" name="led_on:"/>
+                <relationship kind="action" name="textfieldReturn:"/>
+                <relationship kind="outlet" name="led_off" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="led_on" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="pin11_state" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="txtUrl" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

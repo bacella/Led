@@ -13,7 +13,6 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *led_on;
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *led_off;
 @property (weak, nonatomic) IBOutlet UITextField *txtUrl;
-@property (weak, nonatomic) IBOutlet UILabel *pin11_state; //added new lable for state feedback
 
 - (IBAction)textfieldReturn:(id)sender;
 - (IBAction)backgroundTouched:(id)sender;

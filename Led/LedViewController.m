@@ -14,7 +14,6 @@
 
 @implementation LedViewController
 @synthesize txtUrl = _txtUrl;
-@synthesize pin11_state = _pin11_state; //added new lable for state feedback
 
 - (void)viewDidLoad
 {
@@ -80,7 +79,6 @@
     [self setLed_on:nil];
     [self setLed_off:nil];
     [self setTxtUrl:nil];
-    [self setPin11_state:nil];
     [super viewDidUnload];
 }
 

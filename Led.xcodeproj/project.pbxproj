@@ -16,6 +16,7 @@
 		4110089316F39F060077F1E3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4110089116F39F060077F1E3 /* MainStoryboard.storyboard */; };
 		4110089616F39F060077F1E3 /* LedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4110089516F39F060077F1E3 /* LedViewController.m */; };
 		4132686916FE0D31009C2FF6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4132686816FE0D31009C2FF6 /* Default-568h@2x.png */; };
+		41628F8217DAE3FF00366E4F /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 41628F8117DAE3FF00366E4F /* bg.png */; };
 		41F439C816F5678F0033B50D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 41F439C716F5678F0033B50D /* icon.png */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		4110089416F39F060077F1E3 /* LedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LedViewController.h; path = Led/LedViewController.h; sourceTree = SOURCE_ROOT; };
 		4110089516F39F060077F1E3 /* LedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LedViewController.m; path = Led/LedViewController.m; sourceTree = SOURCE_ROOT; };
 		4132686816FE0D31009C2FF6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		41628F8117DAE3FF00366E4F /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		41F439C716F5678F0033B50D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				4132686816FE0D31009C2FF6 /* Default-568h@2x.png */,
+				41628F8117DAE3FF00366E4F /* bg.png */,
 				41F439C716F5678F0033B50D /* icon.png */,
 				4110087F16F39F060077F1E3 /* Led */,
 				4110087816F39F060077F1E3 /* Frameworks */,
@@ -161,6 +164,7 @@
 				4110089316F39F060077F1E3 /* MainStoryboard.storyboard in Resources */,
 				41F439C816F5678F0033B50D /* icon.png in Resources */,
 				4132686916FE0D31009C2FF6 /* Default-568h@2x.png in Resources */,
+				41628F8217DAE3FF00366E4F /* bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,11 +264,13 @@
 		4110089A16F39F060077F1E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Led/Led-Prefix.pch";
 				INFOPLIST_FILE = "Led/Led-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -272,11 +278,13 @@
 		4110089B16F39F060077F1E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Led/Led-Prefix.pch";
 				INFOPLIST_FILE = "Led/Led-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

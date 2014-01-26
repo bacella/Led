@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B6FCCE69-6477-4EF5-A03E-A273F7F2B229</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Led</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5B955071-10DD-47BD-AE94-EB2D8CF6DAEB</key>
+		<string>https://github.com/bacella/Led.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Led.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5B955071-10DD-47BD-AE94-EB2D8CF6DAEB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bacella/Led.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5B955071-10DD-47BD-AE94-EB2D8CF6DAEB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5B955071-10DD-47BD-AE94-EB2D8CF6DAEB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Led</string>
+		</dict>
+	</array>
+</dict>
+</plist>
